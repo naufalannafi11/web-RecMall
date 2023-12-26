@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <title>Mall Recommendation - Semarang</title>
+  </head>
+  <body class="bg-gray-100 font-sans relative">
+    <header
+      class="px-4 bg-gradient-to-r from-purple-600 to-indigo-600 text-white relative z-10"
+    >
+      <div class="container mx-auto py-4">
+        <nav class="flex items-center justify-between">
+          <div class="flex items-center">
+            <a href="#" class="text-2xl font-extrabold"
+              >Mall<span class="text-purple-300">Rec</span></a
+            >
+          </div>
+          <div class="hidden space-x-4 md:flex">
+            <a href="#" class="text-lg text-white hover:text-purple-300"
+              >Home</a
+            >
+            <a
+              href="#featuredMalls"
+              class="text-lg text-white hover:text-purple-300"
+              >Featured Malls</a
+            >
+
+            <a
+              href="#contactUs"
+              class="text-lg text-white hover:text-purple-300"
+              >Contact Us</a
+            >
+          </div>
+          <div class="md:hidden">
+            <!-- Mobile menu button (hamburger icon) -->
+            <button id="mobileMenuButton" class="text-white focus:outline-none">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="h-6 w-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div
+            id="mobileMenu"
+            class="md:hidden absolute top-2 right-0 mt-16 mr-4 bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-4 px-2 rounded-md w-48 hidden"
+          >
+            <!-- Mobile menu (hidden by default) -->
+            <a href="#" class="block py-2 text-lg hover:text-purple-300"
+              >Home</a
+            >
+            <a
+              href="#featuredMalls"
+              class="block py-2 text-lg hover:text-purple-300"
+              >Featured Malls</a
+            >
+
+            <a
+              href="#contactUs"
+              class="block py-2 text-lg hover:text-purple-300"
+              >Contact Us</a
+            >
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section
+      class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-20"
+    >
+      <div class="container mx-auto text-center">
+        <h1
+          class="text-4xl font-bold mb-4"
+          data-aos="fade-up"
+          data-aos-duration="500"
+        >
+          Discover the Best Malls in Semarang
+        </h1>
+        <p
+          class="text-lg mb-8"
+          data-aos="fade-up"
+          data-aos-duration="500"
+          data-aos-delay="100"
+        >
+          Explore a world of shopping and entertainment with MallRec. Find
+          featured malls, popular brands, and more!
+        </p>
+        <a
+          href="#featuredMalls"
+          data-aos="fade-up"
+          data-aos-duration="500"
+          data-aos-delay="200"
+          class="bg-white text-purple-600 px-6 py-3 rounded-full text-lg hover:bg-purple-100 hover:text-purple-800"
+          >Explore Featured Malls</a
+        >
+      </div>
+    </section>
+
+    <section id="featuredMalls" class="container px-4 mx-auto my-8">
+      <h2 class="mb-4 text-2xl font-bold">Featured Malls</h2>
+      <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Mall Card -->
+        <!-- Mall Card 1 -->
+        <div
+          id="mallCard1"
+          class="bg-white rounded-md overflow-hidden shadow-md"
+          data-aos="fade-left"
+          data-aos-duration="500"
+        >
+          <img
+            src="https://lh3.googleusercontent.com/p/AF1QipPdCi86M1XaqJBr5SP4UCTbPq_EaFwWNmRaZQWM=s680-w680-h510"
+            alt="Mall Paragon City Semarang"
+            class="w-full h-40 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold mb-2">
+              Mall Paragon City Semarang
+            </h3>
+            <p class="text-gray-700 truncate">
+              Mall Paragon City Semarang merupakan pusat perbelanjaan yang
+              terletak di kota Semarang, Jawa Tengah, Indonesia. Berbagai pusat
+              perbelanjaan seringkali menawarkan beragam fasilitas, termasuk
+              berbagai toko ritel, pusat hiburan, restoran, dan fasilitas
+              lainnya. Sebagai pusat perbelanjaan, Mall Paragon City Semarang
+              kemungkinan besar menawarkan berbagai macam produk dan merek dari
+              berbagai kategori, seperti pakaian, aksesori, barang elektronik,
+              makanan, dan sebagainya. Selain itu, mall ini mungkin juga
+              menyediakan ruang hiburan seperti bioskop, pusat permainan, atau
+              area bermain anak-anak.
+            </p>
+            <div class="mt-4 flex justify-between items-center">
+              <span class="text-sm text-gray-500"
+                >Location: Jl. Pemuda No.118, Sekayu, Kec. Semarang Tengah, Kota
+                Semarang</span
+              >
+              <a
+                href="detailMall_1.html"
+                class="text-purple-600 hover:underline"
+                >Learn More</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Mall Card 2 -->
+        <div
+          id="mallCard2"
+          class="bg-white rounded-md overflow-hidden shadow-md"
+          data-aos="fade-left"
+          data-aos-duration="500"
+          data-aos-delay="100"
+        >
+          <img
+            src="https://lh3.googleusercontent.com/p/AF1QipN-6S4gfbPT8hB44-8-vVnID1ehclK3IXQlBw0Z=s680-w680-h510"
+            alt="Mall 2"
+            class="w-full h-40 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold mb-2">Mall Ciputra Semarang</h3>
+            <p class="text-gray-700 truncate">
+              Mall Ciputra Semarang merupakan pusat perbelanjaan yang menawarkan
+              berbagai fasilitas, toko ritel, pusat hiburan, restoran, dan
+              layanan lainnya. Mall ini dapat menyediakan berbagai macam produk
+              dan merek dari berbagai kategori, seperti pakaian, aksesori,
+              barang elektronik, makanan, dan sebagainya.
+            </p>
+            <div class="mt-4 flex justify-between items-center">
+              <span class="text-sm text-gray-500"
+                >Location: Jl. Simpang Lima No.1, Pekunden, Kec. Semarang
+                Tengah, Kota Semarang</span
+              >
+              <a
+                href="detailMall_2.html"
+                class="text-purple-600 hover:underline"
+                >Learn More</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Mall Card 3 -->
+        <div
+          class="bg-white rounded-md overflow-hidden shadow-md"
+          data-aos="fade-left"
+          data-aos-duration="500"
+          data-aos-delay="200"
+        >
+          <img
+            src="https://lh3.googleusercontent.com/p/AF1QipPS3QBHVq263utl_gxBIUoYkxJtb2NF2tq7AEK8=s1360-w1360-h1020"
+            alt="Mall 3"
+            class="w-full h-40 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold mb-2">Queen City Mall Semarang</h3>
+            <p class="text-gray-700 truncate">
+              Mall Queen City Semarang merupakan mall baru di Kota Semarang,
+              pusat perbelanjaan yang menawarkan berbagai fasilitas, toko ritel,
+              pusat hiburan, restoran, dan layanan lainnya. Mall ini dapat
+              menyediakan berbagai macam produk dan merek dari berbagai
+              kategori, seperti pakaian, aksesori, barang elektronik, makanan,
+              dan sebagainya.
+            </p>
+            <div class="mt-4 flex justify-between items-center">
+              <span class="text-sm text-gray-500"
+                >Location: Jl. Pemuda No.27-31, Pandansari, Kec. Semarang
+                Tengah, Kota Semarang</span
+              >
+              <a
+                href="detailMall_3.html"
+                class="text-purple-600 hover:underline"
+              >
+                Learn More
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Mall Card 4 -->
+        <div
+          class="bg-white rounded-md overflow-hidden shadow-md"
+          data-aos="fade-left"
+          data-aos-duration="500"
+        >
+          <img
+            src="https://lh3.googleusercontent.com/p/AF1QipPbOFnRTTKcLuNz4X8NW3knVgpgMAPdtDxgv4Wk=s1360-w1360-h1020"
+            alt="Mall 1"
+            class="w-full h-40 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold mb-2">The Park Mall Semarang</h3>
+            <p class="text-gray-700 truncate">
+              The Park Mall Semarang merupakan pusat perbelanjaan yang
+              menawarkan berbagai fasilitas, toko ritel, pusat hiburan,
+              restoran, dan layanan lainnya. Mall ini dapat menyediakan berbagai
+              macam produk dan merek dari berbagai kategori, seperti pakaian,
+              aksesori, barang elektronik, makanan, dan sebagainya.
+            </p>
+            <div class="mt-4 flex justify-between items-center">
+              <span class="text-sm text-gray-500"
+                >Tawangmas, Semarang Barat, Semarang City</span
+              >
+              <a
+                href="detailMall_4.html"
+                class="text-purple-600 hover:underline"
+              >
+                Learn More
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mall Card 5 -->
+        <div
+          class="bg-white rounded-md overflow-hidden shadow-md"
+          data-aos="fade-left"
+          data-aos-duration="500"
+          data-aos-delay="100"
+        >
+          <img
+            src="https://lh3.googleusercontent.com/p/AF1QipPHK0TDYSj06w75BPVIqu-popZy0_qtFs9kBvP-=s1360-w1360-h1020"
+            alt="Mall 2"
+            class="w-full h-40 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold mb-2">DP Mall Semarang</h3>
+            <p class="text-gray-700 truncate">
+              DP Mall Semarang merupakan pusat perbelanjaan yang menawarkan
+              berbagai fasilitas, toko ritel, pusat hiburan, restoran, dan
+              layanan lainnya. Mall ini dapat menyediakan berbagai macam produk
+              dan merek dari berbagai kategori, seperti pakaian, aksesori,
+              barang elektronik, makanan, dan sebagainya.
+            </p>
+            <div class="mt-4 flex justify-between items-center">
+              <span class="text-sm text-gray-500"
+                >Jl. Pemuda No.150, Sekayu, Kec. Semarang Tengah, Kota
+                Semarang</span
+              >
+              <a
+                href="detailMall_5.html"
+                class="text-purple-600 hover:underline"
+              >
+                Learn More
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mall Card 6 -->
+        <div
+          class="bg-white rounded-md overflow-hidden shadow-md"
+          data-aos="fade-left"
+          data-aos-duration="500"
+          data-aos-delay="200"
+        >
+          <img
+            src="https://lh3.googleusercontent.com/p/AF1QipOPZoUVLmoyQKF2_1BKzH_CixDoiuskTyelG77-=s1360-w1360-h1020"
+            alt="Mall 3"
+            class="w-full h-40 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold mb-2">Citraland Mall Semarang</h3>
+            <p class="text-gray-700 truncate">
+              Citraland Mall Semarang merupakan pusat perbelanjaan yang
+              menawarkan berbagai fasilitas, toko ritel, pusat hiburan,
+              restoran, dan layanan lainnya. Mall ini dapat menyediakan berbagai
+              macam produk dan merek dari berbagai kategori, seperti pakaian,
+              aksesori, barang elektronik, makanan, dan sebagainya.
+            </p>
+            <div class="mt-4 flex justify-between items-center">
+              <span class="text-sm text-gray-500"
+                >Jl. Anggrek Raya No.23-19, Pekunden, Kec. Semarang Tengah, Kota
+                Semarang</span
+              >
+              <a
+                href="detailMall_6.html"
+                class="text-purple-600 hover:underline"
+              >
+                Learn More
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Mall Card 7 -->
+        <div
+          class="bg-white rounded-md overflow-hidden shadow-md"
+          data-aos="fade-left"
+          data-aos-duration="500"
+        >
+          <img
+            src="https://lh3.googleusercontent.com/p/AF1QipNv1X8KLry7Do2n7ieV-_gs7RdYrP3b8HTFYZeC=s1360-w1360-h1020"
+            alt="Mall 3"
+            class="w-full h-40 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold mb-2">
+              Uptown Mall BSB City Semarang
+            </h3>
+            <p class="text-gray-700 truncate">
+              Uptown Mall BSB City Mall Semarang merupakan pusat perbelanjaan
+              yang menawarkan berbagai fasilitas, toko ritel, pusat hiburan,
+              restoran, dan layanan lainnya. Mall ini dapat menyediakan berbagai
+              macam produk dan merek dari berbagai kategori, seperti pakaian,
+              aksesori, barang elektronik, makanan, dan sebagainya.
+            </p>
+            <div class="mt-4 flex justify-between items-center">
+              <span class="text-sm text-gray-500"
+                >Jl. Rm. Hadisoebeno Sosro Wardoyo, Pesantren, Kec. Mijen, Kota
+                Semarang</span
+              >
+              <a
+                href="detailMall_7.html"
+                class="text-purple-600 hover:underline"
+              >
+                Learn More
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Mall Card 8 -->
+        <div
+          class="bg-white rounded-md overflow-hidden shadow-md"
+          data-aos="fade-left"
+          data-aos-duration="500"
+          data-aos-delay="100"
+        >
+          <img
+            src="https://lh3.googleusercontent.com/p/AF1QipP_TzGxxWdSG14a7zi1V20LSc0bCco8pcdFGa4B=s1360-w1360-h1020"
+            alt="Mall 3"
+            class="w-full h-40 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold mb-2">Java Supermall</h3>
+            <p class="text-gray-700 truncate">
+              Java Mall Semarang merupakan pusat perbelanjaan yang menawarkan
+              berbagai fasilitas, toko ritel, pusat hiburan, restoran, dan
+              layanan lainnya. Mall ini dapat menyediakan berbagai macam produk
+              dan merek dari berbagai kategori, seperti pakaian, aksesori,
+              barang elektronik, makanan, dan sebagainya.
+            </p>
+            <div class="mt-4 flex justify-between items-center">
+              <span class="text-sm text-gray-500"
+                >Jl. MT. Haryono No.992-994, Karangkidul, Kec. Semarang Sel.,
+                Kota Semarang</span
+              >
+              <button
+                onclick="openModal8()"
+                class="text-purple-600 hover:underline"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- end mall card
+         -->
+      </div>
+    </section>
+
+    <section
+      id="contactUs"
+      class="px-6 container mx-auto my-8"
+      data-aos="fade-up"
+      data-aos-duration="500"
+    >
+      <h2 class="mb-4 text-2xl font-bold">Contact Us</h2>
+      <p class="mb-4 text-lg">
+        Have questions or suggestions? Feel free to reach out to us.
+      </p>
+      <form id="contactForm" action="#" method="post">
+        <label for="name" class="block mb-2">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          class="w-full p-2 mb-4"
+          required
+        />
+
+        <label for="email" class="block mb-2">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          class="w-full p-2 mb-4"
+          required
+        />
+
+        <label for="message" class="block mb-2">Message:</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          class="w-full p-2 mb-4"
+          required
+        ></textarea>
+
+        <button
+          type="button"
+          onclick="submitForm()"
+          class="bg-purple-600 text-white px-4 py-2 rounded"
+        >
+          Submit
+        </button>
+      </form>
+    </section>
+    <footer class="bg-gray-800 py-4 text-center text-white">
+      <p>&copy; 2023 Mall Recommendation - Semarang</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/index.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
